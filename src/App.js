@@ -1,13 +1,17 @@
 import React from 'react';
 import Nav from './components/Nav';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
+import './App.css';
 
 function App() {
   return (
     <div>
+      <section className="hero">
+        <div className="title"> Edison Simondet</div>
+      </section>
       <Nav></Nav>
       <main>
-        <Projects></Projects>
+        <Portfolio></Portfolio>
       </main>
     </div>
   );
