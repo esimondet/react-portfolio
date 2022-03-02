@@ -6,3 +6,12 @@
 .title {
   margin: 0.75rem;
 }
+
+/* Project Stylings */
+
+.project-sub {
+  justify-content: flex-end;
+  position: relative;
+  bottom: 100px;
+  right: 5%;
+}

@@ -8,7 +8,7 @@ const Portfolio = ({ title }) => {
     // {
     //   title: '',
     //   description: '',
-    //   languages: '',
+    //   features: ['','',''],
     //   deployment: '',
     //   github: '',
     // },
@@ -16,7 +16,7 @@ const Portfolio = ({ title }) => {
       title: 'Employee Tracker',
       description:
         'A command prompt application that stores employee information in a SQL database using mysql2',
-      features: 'Node.js mysql2',
+      features: ['Node.js', 'mysql2'],
       deployment: '',
       github: 'https://github.com/esimondet/employee-tracker',
     },
@@ -24,7 +24,7 @@ const Portfolio = ({ title }) => {
       title: 'Note Taker',
       description:
         'A note taking app that uses Express.js to host a local database over Heroku pages',
-      features: 'Express.js JavaScript CSS HTML',
+      features: ['Express.js', 'JavaScript', 'CSS', 'HTML'],
       deployment: 'https://expressjs-notetaker-app.herokuapp.com/',
       github: 'https://github.com/esimondet/notetaker-app',
     },
@@ -32,14 +32,14 @@ const Portfolio = ({ title }) => {
       title: 'Turing Quiz',
       description:
         'A just for fun browser-based quiz on the influential Alan Turing',
-      features: 'JavaScript HTML CSS',
+      features: ['JavaScript', 'HTML', 'CSS'],
       deployment: 'https://esimondet.github.io/turing-quiz/',
       github: 'https://github.com/esimondet/turing-quiz',
     },
     {
       title: 'Hero Maps',
       description: 'An exploration of the Marvel API and Google Maps Platforms',
-      features: 'JavaScript HTML CSS',
+      features: ['JavaScript', 'HTML', 'CSS'],
       deployment: 'https://esimondet.github.io/hero-maps/',
       github: 'https://github.com/esimondet/hero-maps',
     },
@@ -47,7 +47,7 @@ const Portfolio = ({ title }) => {
       title: 'Weather Dashboard',
       description:
         'An app using JQuery and Bulma stylesheets to find and manage weather locations',
-      features: 'JQuery JavaScript HTML CSS',
+      features: ['JQuery', 'JavaScript', 'HTML', 'CSS'],
       deployment:
         'https://esimondet.github.io/challenge-six-weather-dashboard/',
       github: 'https://github.com/esimondet/challenge-six-weather-dashboard',
@@ -55,7 +55,7 @@ const Portfolio = ({ title }) => {
     {
       title: 'Workday Scheduler',
       description: 'A simple calendar app for scheduling your work day',
-      features: 'JQuery JavaScript HTML CSS',
+      features: ['JQuery', 'JavaScript', 'HTML', 'CSS'],
       deployment:
         'https://esimondet.github.io/challenge-five-work-day-scheduler/',
       github: 'https://github.com/esimondet/challenge-five-work-day-scheduler',
@@ -76,15 +76,23 @@ const Portfolio = ({ title }) => {
         {isModalOpen && (
           <Modal currentProject={currentProject} onClose={toggleModal} />
         )}
-        <div>
+        <div className="container">
           {projects.map((project, i) => (
-            <img
-              src={require(`../../assets/images/${project.title}.png`)}
-              alt={project.title}
-              // className=''
-              onClick={() => toggleModal(project, i)}
-              key={project.title}
-            />
+            <>
+              <h2 className="title is-4">{project.title}</h2>
+              <img
+                src={require(`../../assets/images/${project.title}.png`)}
+                alt={project.title}
+                className="box image is-fullwidth"
+                onClick={() => toggleModal(project, i)}
+                key={project.title}
+              />
+              <div className="tags project-sub">
+                {project.features.map((feature) => (
+                  <div className="tag is-medium">{feature}</div>
+                ))}
+              </div>
+            </>
           ))}
         </div>
       </div>
