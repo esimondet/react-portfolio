@@ -8,13 +8,11 @@ function Nav() {
     setIsHamburgerOpen(!isHamburgerOpen);
   };
 
-  //isHamburgerOpen ? 'navbar-menu is-active' : 'navbar-menu'
-
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div
         role="button"
-        className="navbar-burger"
+        className={`navbar-burger ${isHamburgerOpen ? 'is-active' : ''}`}
         aria-label="menu"
         aria-expanded="false"
         onClick={() => toggleNav()}

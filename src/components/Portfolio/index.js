@@ -70,7 +70,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div>
+    <section className="section">
       <h1 className="title has-text-centered"> Projects </h1>
       <div>
         {isModalOpen && (
@@ -101,7 +101,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
