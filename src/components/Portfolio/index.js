@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
-const Portfolio = ({ title }) => {
+const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [projects] = useState([
@@ -64,8 +64,8 @@ const Portfolio = ({ title }) => {
 
   const [currentProject, setCurrentProject] = useState();
 
-  const toggleModal = (project, i) => {
-    setCurrentProject({ ...project, index: i });
+  const toggleModal = (project) => {
+    setCurrentProject({ ...project });
     setIsModalOpen(!isModalOpen);
   };
 
@@ -77,22 +77,31 @@ const Portfolio = ({ title }) => {
           <Modal currentProject={currentProject} onClose={toggleModal} />
         )}
         <div className="container">
-          {projects.map((project, i) => (
-            <>
-              <h2 className="title is-4">{project.title}</h2>
+          {projects.map((project) => (
+            <div key={project.title}>
+              <h2
+                className="title is-4 js-modal-trigger"
+                data-target="modal-js"
+              >
+                {project.title}
+              </h2>
               <img
                 src={require(`../../assets/images/${project.title}.png`)}
                 alt={project.title}
                 className="box image is-fullwidth"
-                onClick={() => toggleModal(project, i)}
-                key={project.title}
+                onClick={() => toggleModal(project)}
               />
               <div className="tags project-sub">
                 {project.features.map((feature) => (
-                  <div className="tag is-medium">{feature}</div>
+                  <div
+                    className="tag is-medium"
+                    key={`${project.title}${feature}`}
+                  >
+                    {feature}
+                  </div>
                 ))}
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
