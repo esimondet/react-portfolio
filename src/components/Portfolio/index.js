@@ -78,18 +78,14 @@ const Portfolio = () => {
         )}
         <div className="container">
           {projects.map((project) => (
-            <div key={project.title}>
-              <h2
-                className="title is-4 js-modal-trigger"
-                data-target="modal-js"
-              >
-                {project.title}
-              </h2>
+            <div key={project.title} className="container">
+              <h2 className="title is-4">{project.title}</h2>
               <img
                 src={require(`../../assets/images/${project.title}.png`)}
                 alt={project.title}
                 className="box image is-fullwidth"
                 onClick={() => toggleModal(project)}
+                data-target="#projectModal"
               />
               <div className="tags project-sub">
                 {project.features.map((feature) => (

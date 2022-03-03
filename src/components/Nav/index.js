@@ -1,27 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Nav() {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsHamburgerOpen(!isHamburgerOpen);
+  };
+
+  //isHamburgerOpen ? 'navbar-menu is-active' : 'navbar-menu'
+
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
-      {/* probably have to do a hook here with aria-expanded */}
       <div
         role="button"
-        className="navbar-burger "
+        className="navbar-burger"
         aria-label="menu"
         aria-expanded="false"
+        onClick={() => toggleNav()}
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </div>
 
-      <div id="navMenu" className="navbar-menu">
+      <div
+        id="navMenu"
+        className={`navbar-menu ${isHamburgerOpen ? 'is-active' : ''}`}
+      >
         <div className="navbar-start">
-          <Link to="/" className="navbar-item">
+          <Link to="/projects" className="navbar-item">
             Projects
           </Link>
-          <Link to="/about-me" className="navbar-item">
+          <Link to="/" className="navbar-item">
             About Me
           </Link>
           <Link to="/contact" className="navbar-item">
