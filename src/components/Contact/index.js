@@ -1,6 +1,6 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   return (
@@ -15,7 +15,7 @@ function Contact() {
                 className="box has-text-centered"
                 rel="noopener noreferrer"
               >
-                {/* <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> */}
+                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 GitHub
               </a>
             </div>
@@ -25,7 +25,7 @@ function Contact() {
                 target="blank"
                 className="box has-text-centered"
               >
-                {/* <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> */}
+                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                 Linkedin
               </a>
             </div>
