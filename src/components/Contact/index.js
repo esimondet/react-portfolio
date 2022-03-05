@@ -1,19 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLinkedin,
-  faGithub,
-  faCss3Alt,
-  faHtml5,
-  faReact,
-  faNodeJs,
-  faJs,
-} from '@fortawesome/free-brands-svg-icons';
-import {
-  faEnvelopeSquare,
-  faFilePdf,
-  faDrawPolygon,
-} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import resume from '../../assets/docs/edison-resume-2022.pdf';
 
 function Contact() {
@@ -72,37 +60,11 @@ function Contact() {
               </a>
             </div>
           </div>
-          <div className="box">
-            <h2 className="has-text-centered">This site was built with: </h2>
-            <br></br>
-            <div>
-              <ul className="columns has-text-centered">
-                <li className="column">
-                  {' '}
-                  <FontAwesomeIcon icon={faReact}></FontAwesomeIcon> React
-                </li>
-                <li className="column">
-                  {' '}
-                  <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon> Node.js
-                </li>
-                <li className="column">
-                  {' '}
-                  <FontAwesomeIcon icon={faDrawPolygon}></FontAwesomeIcon> Bulma
-                </li>
-                <li className="column">
-                  {' '}
-                  <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon> HTML 5
-                </li>
-                <li className="column">
-                  {' '}
-                  <FontAwesomeIcon icon={faCss3Alt}></FontAwesomeIcon> CSS 3
-                </li>
-                <li className="column">
-                  {' '}
-                  <FontAwesomeIcon icon={faJs}></FontAwesomeIcon> JavaScript
-                </li>
-              </ul>
-            </div>
+          <div className="box ">
+            <h2 className="has-text-centered">
+              This site was built with: React, Node.js, Bulma, HTML 5, CSS 3,
+              JavaScript
+            </h2>
           </div>
         </div>
       </section>
