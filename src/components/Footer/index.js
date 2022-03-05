@@ -1,19 +1,17 @@
 import React from 'react';
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer class="footer">
-      <div class="content has-text-centered">
+    <footer className="footer">
+      <div className="content has-text-centered">
         <p>
           <strong>Portfolio</strong> by{' '}
-          <a href="https://edisonsimondet.dev">Edison Simondet</a>. The source
-          code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php"> MIT</a>. The
-          website content is licensed{' '}
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-            CC BY NC SA 4.0
+          <a href="https://edisonsimondet.dev" target="blank">
+            Edison Simondet.
           </a>
-          .
+          Copyright © {currentYear}.
         </p>
       </div>
     </footer>

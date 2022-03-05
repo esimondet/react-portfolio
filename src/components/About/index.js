@@ -31,8 +31,31 @@ function About() {
                 {<Link to="/contact"> Contact</Link>}.
               </p>
               <br></br>
-              <div className="box">
-                <h2 className="has-text-centered">Languages</h2>
+              <div className="box container">
+                <h2 className="title is-4 has-text-centered">Proficiencies</h2>
+                <div className="columns">
+                  <div className="column has-text-centered">
+                    <ul>
+                      <h3 className="title is-5">MERN Stack</h3>
+                      <li>MongoDB</li>
+                      <li>Express.js</li>
+                      <li>React</li>
+                      <li>Node</li>
+                    </ul>
+                  </div>
+                  <div className="colum has-text-centered">
+                    <ul>
+                      <li>Amazon Web Services (AWS)</li>
+                      <li>Simple Storage Service (S3)</li>
+                      <li>RESTful APIs</li>
+                      <li>JQuery</li>
+                      <li>mySQL2</li>
+                      <li>JavaScript</li>
+                      <li>HTML 5</li>
+                      <li>CSS 3</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
