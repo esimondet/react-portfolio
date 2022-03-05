@@ -1,6 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLinkedin,
+  faGithub,
+  faCss3Alt,
+  faHtml5,
+  faReact,
+  faNodeJs,
+  faJs,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faEnvelopeSquare,
+  faFilePdf,
+  faDrawPolygon,
+} from '@fortawesome/free-solid-svg-icons';
 import resume from '../../assets/docs/edison-resume-2022.pdf';
 
 function Contact() {
@@ -18,6 +31,7 @@ function Contact() {
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                <br></br>
                 GitHub
               </a>
             </div>
@@ -29,17 +43,19 @@ function Contact() {
                 className="box has-text-centered"
               >
                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                <br></br>
                 Linkedin
               </a>
             </div>
             <div className="column">
               <a
-                href="../../assets/docs/edison-resume-2022.pdf"
-                target="_blank"
+                href="mailto: edison.simondet@gmail.com"
                 className="box has-text-centered"
                 download
               >
-                Email Me
+                <FontAwesomeIcon icon={faEnvelopeSquare}></FontAwesomeIcon>
+                <br></br>
+                Edison.Simondet@gmail.com
               </a>
             </div>
             <div className="column">
@@ -50,12 +66,43 @@ function Contact() {
                 className="box has-text-centered"
                 download
               >
-                Resume (PDF Download)
+                <FontAwesomeIcon icon={faFilePdf}></FontAwesomeIcon>
+                <br></br>
+                Resume
               </a>
             </div>
           </div>
           <div className="box">
             <h2 className="has-text-centered">This site was built with: </h2>
+            <br></br>
+            <div>
+              <ul className="columns has-text-centered">
+                <li className="column">
+                  {' '}
+                  <FontAwesomeIcon icon={faReact}></FontAwesomeIcon> React
+                </li>
+                <li className="column">
+                  {' '}
+                  <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon> Node.js
+                </li>
+                <li className="column">
+                  {' '}
+                  <FontAwesomeIcon icon={faDrawPolygon}></FontAwesomeIcon> Bulma
+                </li>
+                <li className="column">
+                  {' '}
+                  <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon> HTML 5
+                </li>
+                <li className="column">
+                  {' '}
+                  <FontAwesomeIcon icon={faCss3Alt}></FontAwesomeIcon> CSS 3
+                </li>
+                <li className="column">
+                  {' '}
+                  <FontAwesomeIcon icon={faJs}></FontAwesomeIcon> JavaScript
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
