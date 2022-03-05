@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import resume from '../../assets/docs/edison-resume-2022.pdf';
 
 function Contact() {
   return (
@@ -14,6 +15,7 @@ function Contact() {
                 href="https://github.com/esimondet"
                 className="box has-text-centered"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 GitHub
@@ -22,7 +24,8 @@ function Contact() {
             <div className="column">
               <a
                 href="https://www.linkedin.com/in/edison-simondet/"
-                target="blank"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="box has-text-centered"
               >
                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
@@ -31,18 +34,21 @@ function Contact() {
             </div>
             <div className="column">
               <a
-                href="https://github.com/esimondet"
-                target="blank"
+                href="../../assets/docs/edison-resume-2022.pdf"
+                target="_blank"
                 className="box has-text-centered"
+                download
               >
                 Email Me
               </a>
             </div>
             <div className="column">
               <a
-                href="https://github.com/esimondet"
-                target="blank"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="box has-text-centered"
+                download
               >
                 Resume (PDF Download)
               </a>

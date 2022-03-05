@@ -34,6 +34,7 @@ function About() {
               <div className="box container">
                 <h2 className="title is-4 has-text-centered">Proficiencies</h2>
                 <div className="columns">
+                  {/* make these into tags and have them list column wise. probs 3 columns, 1 for mern 2 for else */}
                   <div className="column has-text-centered">
                     <ul>
                       <h3 className="title is-5">MERN Stack</h3>
