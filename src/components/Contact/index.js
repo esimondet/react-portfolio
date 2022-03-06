@@ -7,7 +7,7 @@ import resume from '../../assets/docs/edison-resume-2022.pdf';
 function Contact() {
   return (
     <>
-      <section className="section">
+      <section className="section is-large">
         <h1 className="title has-text-centered">Contact</h1>
         <div className="container">
           <div className="columns">

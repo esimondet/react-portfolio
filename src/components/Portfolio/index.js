@@ -13,14 +13,6 @@ const Portfolio = () => {
     //   github: '',
     // },
     {
-      title: 'Employee Tracker',
-      description:
-        'A command prompt application that stores employee information in a SQL database using mysql2',
-      features: ['Node.js', 'mysql2'],
-      deployment: '',
-      github: 'https://github.com/esimondet/employee-tracker',
-    },
-    {
       title: 'Note Taker',
       description:
         'A note taking app that uses Express.js to host a local database over Heroku pages',
@@ -28,6 +20,15 @@ const Portfolio = () => {
       deployment: 'https://expressjs-notetaker-app.herokuapp.com/',
       github: 'https://github.com/esimondet/notetaker-app',
     },
+    {
+      title: 'Employee Tracker',
+      description:
+        'A command prompt application that stores employee information in a SQL database using mysql2',
+      features: ['Node.js', 'mysql2'],
+      deployment: 'https://github.com/esimondet/employee-tracker',
+      github: 'https://github.com/esimondet/employee-tracker',
+    },
+
     {
       title: 'Turing Quiz',
       description:

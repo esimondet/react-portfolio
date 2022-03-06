@@ -1,3 +1,14 @@
+/* Global */
+.jonquil {
+  background-color: #f9c80e;
+  color: black;
+}
+
+.navbar {
+  background-color: #f9c80e;
+  color: black;
+}
+
 /* Navbar Stylings */
 .navbar-burger {
   margin-left: 0;

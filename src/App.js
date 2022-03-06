@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <section className="hero">
+    <div className="cultured">
+      <section className="hero cultured">
         <div className="title"> Edison Simondet</div>
       </section>
       <Router>

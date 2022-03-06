@@ -23,9 +23,9 @@ import {
 function About() {
   return (
     <>
-      <section className="section">
-        <h1 className="title has-text-centered">Hello, I'm Edison Simondet</h1>
-        <div className="container">
+      <section className="section ">
+        <h1 className="title has-text-centered ">Hello, I'm Edison Simondet</h1>
+        <div className="container ">
           <div className="box columns">
             <div className="column">
               <img
