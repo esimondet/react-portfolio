@@ -36,10 +36,10 @@ function About() {
             <div className="column">
               <p>
                 I'm a <strong> Full Stack Developer </strong> near the Twin
-                Cities Minnesota area. When working on projects I an especially
-                most excited by accessibility and user experience. My goal is to
-                make websites and applications that work for all levels of user
-                ability while still being dynamic and engaging.
+                Cities Minnesota area. Accessibility and improving the user
+                experience are especially exciting to me. My goal is to make
+                websites and applications that meet users where they are while
+                still being dynamic and engaging.
               </p>
               <br></br>
               <p>
