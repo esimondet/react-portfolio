@@ -12,6 +12,11 @@ html {
   background-color: rgb(30, 30, 30);
 }
 
+.border {
+  border-color: #f9c80e;
+  border-bottom-style: solid;
+}
+
 .font {
   color: white;
 }

@@ -24,18 +24,27 @@ function Nav() {
 
       <div
         id='navMenu'
-        className={`navbar-menu background ${
-          isHamburgerOpen ? 'is-active' : ''
+        className={`navbar-menu ${
+          isHamburgerOpen ? 'is-active background border' : ''
         }`}
       >
         <div className='navbar-start'>
-          <Link to='/projects' className='navbar-item font'>
+          <Link
+            to='/projects'
+            className={`navbar-item ${isHamburgerOpen ? 'font' : ''}`}
+          >
             Projects
           </Link>
-          <Link to='/' className='navbar-item font'>
+          <Link
+            to='/'
+            className={`navbar-item ${isHamburgerOpen ? 'font' : ''}`}
+          >
             About Me
           </Link>
-          <Link to='/contact' className='navbar-item font'>
+          <Link
+            to='/contact'
+            className={`navbar-item ${isHamburgerOpen ? 'font' : ''}`}
+          >
             Contact
           </Link>
         </div>
