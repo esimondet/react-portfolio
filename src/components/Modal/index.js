@@ -24,7 +24,7 @@ const Modal = ({ onClose, currentProject }) => {
             />
             <div>
               <h3 className='title is-4 has-text-centered font'>{title}</h3>
-              <p>{description}</p>
+              <p className='font'>{description}</p>
               <br></br>
               <div>
                 <ul className='tags'>
