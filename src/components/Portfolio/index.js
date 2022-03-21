@@ -13,12 +13,12 @@ const Portfolio = () => {
     //   github: '',
     // },
     {
-      title: 'Note Taker',
+      title: 'OnTrack',
       description:
-        'A note taking app that uses Express.js to host a local database over Heroku pages',
-      features: ['Express.js', 'JavaScript', 'CSS', 'HTML'],
-      deployment: 'https://expressjs-notetaker-app.herokuapp.com/',
-      github: 'https://github.com/esimondet/notetaker-app',
+        'OnTrack is a Team Management web app, focused on Software Development teams that collaborate using GitHub Project and Issues to track their project development.',
+      features: ['MERN Stack', 'SPA', 'GraphQL'],
+      deployment: 'https://group2-ontrack.herokuapp.com/',
+      github: 'https://github.com/Feortegas/OnTrack',
     },
     {
       title: 'Employee Tracker',
@@ -28,7 +28,6 @@ const Portfolio = () => {
       deployment: 'https://github.com/esimondet/employee-tracker',
       github: 'https://github.com/esimondet/employee-tracker',
     },
-
     {
       title: 'Turing Quiz',
       description:
@@ -36,6 +35,14 @@ const Portfolio = () => {
       features: ['JavaScript', 'HTML', 'CSS'],
       deployment: 'https://esimondet.github.io/turing-quiz/',
       github: 'https://github.com/esimondet/turing-quiz',
+    },
+    {
+      title: 'Note Taker',
+      description:
+        'A note taking app that uses Express.js to host a local database over Heroku pages',
+      features: ['Express.js', 'JavaScript', 'CSS', 'HTML'],
+      deployment: 'https://expressjs-notetaker-app.herokuapp.com/',
+      github: 'https://github.com/esimondet/notetaker-app',
     },
     {
       title: 'Hero Maps',
@@ -71,27 +78,27 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="section">
-      <h1 className="title has-text-centered"> Projects </h1>
+    <section className='section'>
+      <h1 className='title has-text-centered font'> Projects </h1>
       <div>
         {isModalOpen && (
           <Modal currentProject={currentProject} onClose={toggleModal} />
         )}
-        <div className="container">
+        <div className='container'>
           {projects.map((project) => (
-            <div key={project.title} className="container">
-              <h2 className="title is-4">{project.title}</h2>
+            <div key={project.title} className='container'>
+              <h2 className='title is-4 font'>{project.title}</h2>
               <img
                 src={require(`../../assets/images/${project.title}.png`)}
                 alt={project.title}
-                className="box image is-fullwidth"
+                className='box image is-fullwidth'
                 onClick={() => toggleModal(project)}
-                data-target="#projectModal"
+                data-target='#projectModal'
               />
-              <div className="tags project-sub">
+              <div className='tags project-sub'>
                 {project.features.map((feature) => (
                   <div
-                    className="tag is-medium"
+                    className='tag is-medium'
                     key={`${project.title}${feature}`}
                   >
                     {feature}

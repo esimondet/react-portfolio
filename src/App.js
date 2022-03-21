@@ -9,17 +9,17 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="cultured">
-      <section className="hero cultured">
-        <div className="title"> Edison Simondet</div>
+    <div className='cultured'>
+      <section className='hero cultured'>
+        <div className='title font'> Edison Simondet</div>
       </section>
       <Router>
         <Nav />
         <main>
           <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path='/' element={<About />} />
+            <Route path='/projects' element={<Portfolio />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </main>
       </Router>
